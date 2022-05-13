@@ -12,13 +12,9 @@ class Student {
   }
 
   getIntroduction() {
-    return `Hello, my name is ${this.getFullName()} and I am studying ${this.subject}`;
+    const { subject } = this;
+    const fullName = this.getFullName();
+    return `Hello, my name is ${fullName} and I am studying ${subject}.`;
   }
 
 }
-
-Student.prototype.getIntroduction = function () {
-  const { subject } = this;
-  const fullName = this.getFullName();
-  return `Hello, my name is ${fullName} and I am studying ${subject}.`;
-};
