@@ -7,7 +7,7 @@ const nextId = 4;
 const todos = [
   {
     id: 1,
-    task: 'Learn to code.',
+    task: 'Learn to code!',
     isCompleted: false
   },
   {
