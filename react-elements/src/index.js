@@ -1,5 +1,5 @@
 import React from 'react';
-import * as ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
 const words = React.createElement('h1', null, 'Hello, React!');
 
