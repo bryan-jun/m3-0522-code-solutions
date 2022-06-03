@@ -1,0 +1,19 @@
+.pass-word {
+  margin-right: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.green {
+  color: green;
+  font-size: 20px;
+}
+
+.red {
+  color: red;
+  font-size: 20px;
+}
+
+.warning {
+  font-size: 15px;
+}
