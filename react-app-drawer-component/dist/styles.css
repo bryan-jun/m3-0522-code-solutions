@@ -1,0 +1,56 @@
+.menu-icon {
+  font-size: 30px;
+  margin-left: 20px;
+}
+
+.menu-icon:hover {
+  cursor: pointer;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-left: 20px;
+  width: 30%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.menu:hover {
+  cursor: pointer;
+}
+
+.first {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.others {
+  margin-top: 10px;
+}
+
+.others:hover {
+  background-color: lightblue;
+  border-radius: 5px;
+  width: 100%;
+  height: 20px;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+.everything {
+  position: fixed;
+  top: 0;
+  background-color: grey;
+  width: 70%;
+  height: 100%;
+  right: 0;
+}
