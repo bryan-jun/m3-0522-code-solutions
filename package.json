@@ -7,6 +7,9 @@
     "prepare": "husky install"
   },
   "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@babel/plugin-transform-react-jsx": "^7.17.12",
+    "babel-loader": "^8.2.5",
     "eslint": "^8.14.0",
     "eslint-config-standard": "^17.0.0",
     "eslint-plugin-html": "^6.2.0",
@@ -17,9 +20,15 @@
     "husky": "^7.0.4",
     "lint-staged": "^12.4.0",
     "markuplint": "^2.7.0",
-    "react": "^18.0.0",
+    "react": "^18.1.0",
     "stylelint": "^14.7.1",
     "stylelint-config-recommended": "^7.0.0",
-    "stylelint-config-standard": "^25.0.0"
+    "stylelint-config-standard": "^25.0.0",
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "react-dom": "^18.1.0",
+    "save-dev": "^0.0.1-security"
   }
 }
