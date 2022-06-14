@@ -14,13 +14,9 @@ class App extends React.Component {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(data => {
-        const userList = [];
-        for (let i = 0; i < 10; i++) {
-          userList.push(data[i]);
-        }
-        this.setState({ users: userList, isLoading: false });
-      });
+        this.setState({ users: data, isLoading: false });
 
+      });
   }
 
   render() {
