@@ -17,11 +17,7 @@ export default class App extends React.Component {
     fetch('/api/todos')
       .then(response => response.json())
       .then(data => {
-        const todoList = [];
-        for (let i = 0; i < data.length; i++) {
-          todoList.push(data[i]);
-        }
-        this.setState({ todos: todoList });
+        this.setState({ todos: data });
       });
 
   }
@@ -66,7 +62,7 @@ export default class App extends React.Component {
     )
       .then(response => response.json())
       .then(data => {
-        const todoList3 = this.state.todos;
+        const todoList3 = [...this.state.todos];
         todoList3[todo].isCompleted = opposite.isCompleted;
         this.setState({ todos: todoList3 });
       });
