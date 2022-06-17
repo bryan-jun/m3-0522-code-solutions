@@ -1,11 +1,11 @@
 require('dotenv/config');
 const pg = require('pg');
-const argon2 = require('argon2');
+const argon2 = require('argon2'); // eslint-disable-line
 const express = require('express');
 const ClientError = require('./client-error');
 const errorMiddleware = require('./error-middleware');
 
-const db = new pg.Pool({
+const db = new pg.Pool({ // eslint-disable-line
   connectionString: process.env.DATABASE_URL,
   ssl: {
     rejectUnauthorized: false
