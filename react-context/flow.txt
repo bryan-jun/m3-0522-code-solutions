@@ -1,0 +1,21 @@
+User can sign up
+
+The user enters in a Username and Password into the client and clicks register, which then prompts the server to create a row in the database with
+the Username and a hashed password generated from the password entered using Argon2 using the post call for sign-up.
+
+User can sign in
+
+The user enters in an already created Username and Password into the fields and clicks log in. The client checks against the database through the server sign-in post call
+to see if the username and hashedpassword pair matches the one entered. If the verification works (and the pairing exists in the database), the token and the payload are
+posted and the user is authorized to enter the home page.
+
+User can stay signed in
+
+The client's "user" state in app.jsx is filled with the user that's signed in and remains so as long as the client does not receive a sign-out handler.
+Because the user state is not null, it remains in the Rick-Roll home page.
+
+User can sign out
+
+When a user is signed in (the user state is filled with a name), the nav bar refreshes to have a sign-out button instead of the sign-in / sign-up.
+Clicking sign out sets the user state to be null, which then prompts the client to revert back to the sign-in page and allows for new server calls
+of sign-up and sign-in to be called. The hash token is also removed so that a new one can be set for other sign-ins.
